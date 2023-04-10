@@ -1,6 +1,6 @@
 A = 0
-Q = 13
-M = 2
+Q = 7
+M = 3
 Count = int.bit_length(M)
 CountA = int.bit_length(A)
 CountQ = int.bit_length(Q)
@@ -52,11 +52,4 @@ while Count != 0:
     Q -= (Q//10**(det(Q) - 1)) * (10**(det(Q)-1))
   Count -= 1
 
-num = 0
-
-if CountSec/4 != 0:
-  while CountSec > 0:
-    CountSec -= 2
-    num += 1    
-
-print ("EL RESIDUO ES:", "0"*num ,A, "EL COCIENTE ES:", "0"*num, Q)
+print ("EL RESIDUO ES:", A, "EL COCIENTE ES:", Q)
